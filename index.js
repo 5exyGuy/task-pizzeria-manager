@@ -28,7 +28,7 @@ window.onload = function() {
     const pizzaConfirmCancelButton = document.getElementById('cancel_remove');
     pizzaConfirmCancelButton.addEventListener('click', CloseConfirmationWindow);
 
-    const pizzaConfirmRemoveButton = document.getElementById('confirm_remove');
+    const pizzaConfirmRemoveButton = document.getElementById('confirm_delete');
     pizzaConfirmRemoveButton.addEventListener('click', RemovePizza);
 
     SortPizzaMenu();
@@ -39,6 +39,7 @@ window.onload = function() {
  * Closes a confirmation window
  */
 function CloseConfirmationWindow() {
+    console.log('close');
     document.getElementById('confirm_remove').style.display = 'none';
 }
 
