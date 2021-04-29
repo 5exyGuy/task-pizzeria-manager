@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="column-1">
+                <form id="pizza_form" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" maxlength="30" required>
+        
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" min="0" step='0.01' required>
+        
+                    <label for="heat">Heat:</label>
+                    <input type="number" id="heat" min="1" max="3" step="1" name="heat">
+        
+                    <label for="toppings">Toppings:</label>
+                    <select id="toppings" name="toppings" multiple required>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Mushrooms">Mushrooms</option>
+                        <option value="Onions">Onions</option>
+                        <option value="Sausage">Sausage</option>
+                        <option value="Bacon">Bacon</option>
+                        <option value="Extra cheese">Extra cheese</option>
+                        <option value="Black olives">Black olives</option>
+                        <option value="Green peppers">Green peppers</option>
+                    </select>
+        
+                    <label for="photo">Photo:</label>
+                    <select id="photo" name="photo">
+                        <option value="pizza01">Photo #1</option>
+                        <option value="pizza02">Photo #2</option>
+                        <option value="pizza03">Photo #3</option>
+                        <option value="pizza04">Photo #4</option>
+                        <option value="pizza05">Photo #5</option>
+                        <option value="pizza06">Photo #6</option>
+                        <option value="pizza07">Photo #7</option>
+                        <option value="pizza08">Photo #8</option>
+                        <option value="pizza09">Photo #9</option>
+                        <option value="pizza10">Photo #10</option>
+                    </select>
+                    
+                    <img id="pizza_photo" src="images/pizza01.jpg" width="200px" height="200px" />
+        
+                    <input type="submit" value="Add pizza">
+                </form>
+            </div>
+
+            <div class="column-2">
+                <form id="pizza_sort_form" method="POST">
+                    <select id="sortby" name="sortby">
+                        <option value="name">Name</option>
+                        <option value="price">Price</option>
+                        <option value="heat">Heat</option>
+                    </select>
+        
+                    <input type="submit" value="Sort">
+                </form>
+
+                <table id="pizza_menu" style="width:100%"></table>
+            </div>
+
+            <div id="confirm_remove" class="modal">
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <p>Are you sure you want to remove pizza from menu?</p>
+
+                        <div class="clearfix">
+                            <button id='cancel_remove' type="button" class="cancelbtn">Cancel</button>
+                            <button id='confirm_remove' type="button" class="deletebtn">Remove</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

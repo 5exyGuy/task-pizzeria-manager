@@ -1,0 +1,141 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.photo {
+    width: 100%;
+    object-fit: contain;
+}
+
+.column-1 {
+    float: left;
+    width: 31%;
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    
+}
+
+.column-2 {
+    float: left;
+    width: 51%;
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background: #1890ff;
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+
+input[type=submit]:hover {
+    background-color: #357fe0;
+}
+
+button {
+    background: #1890ff;
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+
+.cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+}
+  
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+  
+.deletebtn {
+    background-color: #f44336;
+}
+  
+.container {
+    padding: 16px;
+    text-align: center;
+}
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto 15% auto;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    width: 20%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+  
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
