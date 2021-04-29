@@ -39,7 +39,6 @@ window.onload = function() {
  * Closes a confirmation window
  */
 function CloseConfirmationWindow() {
-    console.log('close');
     document.getElementById('confirm_remove').style.display = 'none';
 }
 
